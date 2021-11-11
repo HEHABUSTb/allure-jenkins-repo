@@ -23,6 +23,7 @@ class TestSmokeMainPage():
 
     @allure.severity(allure.severity_level.CRITICAL)
     @allure.description('Guest should see login link')
+    @pytest.mark.xfail('Example of xfailed test')
     def test_guest_should_see_login_link(self, browser): #example failed test login link invalid
         page = MainPage(browser, link)
         page.open()
