@@ -1,6 +1,6 @@
 import allure
 
-from pages.main_page import MainPage
+from Pages.main_page import MainPage
 from selenium.webdriver.common.by import By
 import pytest
 
